@@ -1,10 +1,24 @@
 # Shell Welcome Quote :: API
 
-## Quick start
+### Quick start
 
-1. `git clone git@github.com:Shell-Welcome-Quote/swq-api.git`
-2. `cd swq-api`
-3. `yarn install`
+```bash
+cd /code/swq
+git clone git@github.com:Shell-Welcome-Quote/swq-api.git
+cd swq-api
+yarn install
+
+cp .env.local-example .env
+
+# Create docker 'common' network, if you don't have one
+docker network create common --driver bridge
+
+# Run docker containers in shadow mode
+make upd
+
+# Run the main application in dev mode
+npm run start:dev main
+```
 
 ## How to
 
