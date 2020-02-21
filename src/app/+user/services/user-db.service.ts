@@ -20,4 +20,7 @@ export class UserDbService {
     return this.$userRepo.find();
   }
 
+  public findOne(id: string): Promise<User | undefined> {
+    return this.$userRepo.findOne(id);
+  }
 }

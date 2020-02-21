@@ -41,6 +41,7 @@
     "migrations:diff": "npm run orm -- migration:generate --name",
     "migrations:run": "npm run orm -- migration:run",
     "migrations:revert": "npm run orm -- migration:revert",
+    "migrations:create": "npm run orm -- migration:create --name",
     "seeds:new": "ts-node src/configs/seed-generator.ts generate",
     "seeds:run": "npm run orm -- migration:run --connection 'seeding'",
     "seeds:revert": "npm run orm -- migration:revert --connection 'seeding'"
